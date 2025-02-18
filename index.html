@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - BB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/ht.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <div class="image-box">
+          <img src="images/ht.png" alt="Profile Image" />
+        </div>
+        <div class="text-box">
+          <h2>I'M BINGE BB. <br /><span class="me">WEB DEVELOPER</span></h2>
+
+          <p>
+            I'm a passionate web developer and UI/UX designer committed to
+            crafting visually stunning and highly functional digital
+            experiences. With a focus on both code and design, I aim to create
+            intuitive, user-friendly interfaces that enhance the overall user
+            experience and drive meaningful interactions.
+          </p>
+          <a href="#" class="btn">
+            <span class="text">DOWNLOAD CV</span>
+            <span class="download"><i class="fas fa-download"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Toggle Button -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="index.html" class="home-btn"
+        ><i class="fas fa-home"></i> <span>Home</span></a
+      >
+      <a href="about.html" class="about-btn"
+        ><i class="fas fa-user"></i> <span>About</span></a
+      >
+      <a href="#" class="skills-btn"
+        ><i class="fas fa-project-diagram"></i> <span>Projects</span></a
+      >
+      <a href="services.html" class="services-btn"
+        ><i class="fas fa-cogs"></i> <span>Services</span></a
+      >
+      <a href="contactme.html" class="contact-btn"
+        ><i class="fas fa-envelope"></i> <span>Contact</span></a
+      >
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        let sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

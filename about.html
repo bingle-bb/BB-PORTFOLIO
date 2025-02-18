@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT ME - BB</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="shortcut icon" href="images/ht.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+   
+  </head>
+  <body>
+    <div class="contact-wrapper">
+        <h1 class="header-text">ABOUT <span class="highlight">Me</span></h1>
+        
+      <div class="resume-container">
+        <div class="personal-info">
+          <h3>PERSONAL INFOS</h3>
+          <div class="info-grid">
+            <p>Name : <strong>BB</strong></p>
+            <p>Age : <strong>21 Years</strong></p>
+            <p>Nationality :<strong> Myanmar</strong></p>
+            <p>
+             Freelance :
+             <strong><span class="available">Available</span></strong>
+            </p>
+            <p>Address : <strong>Bingle</strong></p>
+            <p>
+              Phone : 
+              <strong><a href="tel:+95921184010">+95921184010</a></strong>
+            </p>
+            <p>
+             Email :
+             <strong><a href="mailto:bb@gmail.com">bb@gmail.com</a> </strong>
+            </p>
+            
+            <p>Languages : <strong>Burmese, English</strong></p>
+          </div>
+
+          <a href="#" class="download-btn">
+            DOWNLOAD CV <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <h2>2<sup>+</sup></h2>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+          <div class="stat-box">
+            <h2>5<sup>+</sup></h2>
+            <p>HAPPY CUSTOMERS</p>
+          </div>
+          <div class="stat-box">
+            <h2>2<sup>+</sup></h2>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+        </div>
+    </div>
+ 
+    <!-- skills section -->
+    <section class="skills-section">
+      <h2 class="section-title">MY SKILLS</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus
+        lectus viverra in semper nec pretium mus.
+      </p>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML</h3>
+          <p>The backbone of web pages, used to structure and organize content on the web.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h3>CSS</h3>
+          <p>Styles websites with colors, layouts, and animations for a visually appealing experience.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-js fa-3x"></i>
+          <h3>JavaScript</h3>
+          <p>A versatile language that adds interactivity, animations, and dynamic behavior to websites.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-bootstrap"></i>
+          <h3>Bootstrap</h3>
+          <p>A popular front-end framework that helps create responsive and mobile-friendly websites quickly.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-git-alt"></i>
+          <h3>Git & GitHub</h3>
+          <p>Git is a version control system for tracking code changes. GitHub is a platform for hosting and collaborating on Git repositories.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-wordpress"></i>
+          <h3>WordPress</h3>
+          <p>A powerful content management system (CMS) for building websites and blogs with ease.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toggle Button -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="index.html" class="home-btn"
+        ><i class="fas fa-home"></i> <span>Home</span></a
+      >
+      <a href="about.html" class="about-btn"
+        ><i class="fas fa-user"></i> <span>About</span></a
+      >
+      <a href="#" class="skills-btn"
+        ><i class="fas fa-project-diagram"></i> <span>Projects</span></a
+      >
+      <a href="services.html" class="services-btn"
+        ><i class="fas fa-cogs"></i> <span>Services</span></a
+      >
+      <a href="contactme.html" class="contact-btn"
+        ><i class="fas fa-envelope"></i> <span>Contact</span></a
+      >
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        let sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("show");
+      }
+    </script>
+   
+  </body>
+</html>

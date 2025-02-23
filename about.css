@@ -125,7 +125,7 @@ a:hover {
   color: #0d0d0d;
 }
 
-/* Responsive Design */
+/* Responsive Design for header section*/
 
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
@@ -254,7 +254,7 @@ a:hover {
   font-size: 20px;
 }
 
-/* Responsive Design */
+/* Responsive Design for stat-box */
 
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
@@ -375,74 +375,6 @@ a:hover {
   color: #f3f3f3;
 }
 
-/* Responsive Design */
-
-/* Tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .skills-container {
-    max-width: 90%;
-  }
-
-  .skill-card {
-    padding: 18px;
-  }
-
-  .skill-card h3 {
-    font-size: 17px;
-  }
-
-  .skill-card p {
-    font-size: 13px;
-  }
-}
-
-/* Mobile Phones (max-width: 768px) */
-@media (max-width: 768px) {
-  .skills-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-  }
-
-  .skill-card {
-    padding: 15px;
-  }
-
-  .skill-card i {
-    font-size: 35px;
-  }
-
-  .skill-card h3 {
-    font-size: 16px;
-  }
-
-  .skill-card p {
-    font-size: 12px;
-  }
-}
-
-/* Very Small Screens (max-width: 480px) */
-@media (max-width: 480px) {
-  .skills-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .skill-card {
-    padding: 12px;
-  }
-
-  .skill-card i {
-    font-size: 30px;
-  }
-
-  .skill-card h3 {
-    font-size: 15px;
-  }
-
-  .skill-card p {
-    font-size: 11px;
-  }
-}
-
 /* experience and education section */
 .timeline-header {
   text-align: center;
@@ -533,7 +465,7 @@ a:hover {
   margin-top: 5px;
 }
 
-/* Responsive Design */
+/* Responsive Design for experience and education section*/
 /* Small devices (Mobile phones, 480px and up) */
 @media (max-width: 480px) {
   .timeline {
@@ -673,7 +605,7 @@ a:hover {
     font-size: 15px;
   }
 }
-/* .certificates */
+/* certificates */
 .certificates {
   text-align: center;
   margin-top: 40px;
@@ -751,6 +683,81 @@ a:hover {
 .cert-btn:hover {
   background: #e0a800;
   color: #000000d3;
+}
+/* Responsive Design for certificates section*/
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .certi-title {
+    font-size: 22px;
+  }
+
+  .cert-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .cert-item {
+    padding: 15px;
+  }
+
+  .cert-item i {
+    font-size: 35px;
+  }
+
+  .cert-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .certi-title {
+    font-size: 20px;
+  }
+
+  .cert-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  .cert-item {
+    padding: 12px;
+  }
+
+  .cert-item i {
+    font-size: 32px;
+  }
+
+  .cert-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .certi-title {
+    font-size: 18px;
+  }
+
+  .cert-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-item {
+    padding: 10px;
+  }
+
+  .cert-item i {
+    font-size: 28px;
+  }
+
+  .cert-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
 }
 
 /* Sidebar-section */
@@ -837,7 +844,7 @@ a:hover {
 .toggle-btn:hover {
   background: white;
 }
-
+/* Responsive Design for sidebar section*/
 /* Hide Sidebar on Small Screens */
 @media (max-width: 768px) {
   .sidebar {
@@ -900,7 +907,7 @@ a:hover {
 .to-top:hover {
   color: #ebe4e473;
 }
-
+/* Responsive Design for to top button*/
 /* Responsive for smaller devices */
 @media (max-width: 768px) {
   .to-top {

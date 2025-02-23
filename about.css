@@ -750,6 +750,7 @@ a:hover {
   }
 }
 /* to-top */
+/* to-top */
 .to-top {
   position: fixed;
   bottom: 20px;
@@ -764,8 +765,32 @@ a:hover {
   justify-content: center;
   text-decoration: none;
   font-size: 24px;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover effect */
 .to-top:hover {
   color: #ebe4e473;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+  .to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Responsive for very small devices (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .to-top {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    bottom: 10px;
+    right: 10px;
+  }
 }

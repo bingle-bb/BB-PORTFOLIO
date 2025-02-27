@@ -87,10 +87,10 @@ body {
   align-items: center;
   border-radius: 12px;
   text-align: center;
-  opacity: 0; /* Hidden by default */
-  transform: scale(0.9);
+  opacity: 0;
+  transform: scale(0.8);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none; /* Ensures overlay does not block interactions with card links */
+  pointer-events: none;
 }
 
 /* Show overlay on hover */
@@ -118,8 +118,9 @@ strong {
   display: inline-block;
   margin: 5px;
   padding: 8px 16px;
-  background: #ffd700;
-  color: black;
+  pointer-events: auto;
+  background: #ffd900d0;
+  color: rgba(0, 0, 0, 0.692);
   text-decoration: none;
   border-radius: 6px;
   font-weight: 800px;
@@ -127,7 +128,8 @@ strong {
 }
 
 .project-links a:hover {
-  background: #ffc107;
+  background: rgba(0, 0, 0, 0.233);
+  color: #ffd900d0;
 }
 
 /* Responsive Adjustments */
@@ -251,49 +253,84 @@ strong {
 
 /* Hide Sidebar on Small Screens */
 @media (max-width: 768px) {
+  .sidebar a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Fixed width */
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  /* Icons Stay Centered */
+  .sidebar a i {
+    font-size: 18px;
+  }
+
+  /* Hover Effect - Only Change Color */
+  .sidebar a:hover {
+    background: #ffc107;
+    color: black;
+  }
+
+  /* Prevent Text from Appearing */
+  .sidebar a span {
+    display: inline; /* Ensure text is shown */
+  }
+}
+@media (max-width: 768px) {
+  .toggle-btn {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    display: block; /* Ensure it's always visible */
+    z-index: 1000;
+  }
+
+  .toggle-btn:hover {
+    background: #e0a70a7c;
+  }
+
+  /* Sidebar hidden initially */
   .sidebar {
-    right: -200px; /* Hide initially */
-    flex-direction: column;
-    align-items: flex-start;
-    background: #222;
+    right: -200px;
+    background: rgba(34, 34, 34, 0.7);
+    backdrop-filter: blur(10px); /* Adds frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
     transition: right 0.3s ease-in-out;
   }
 
+  /* Sidebar opens when 'show' class is added */
   .sidebar.show {
-    right: 10px; /* Show when toggled */
+    right: 10px;
   }
 
+  /* Make sure buttons stay same size */
   .sidebar a {
-    width: 100%;
-    border-radius: 5px;
-    justify-content: flex-start;
-    padding-left: 15px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
   }
 
+  /* Ensure icons remain centered */
   .sidebar a i {
-    position: relative;
-    right: auto;
-    margin-right: 10px;
-  }
-
-  .sidebar a span {
-    opacity: 1;
-    position: relative;
-    right: auto;
-  }
-
-  .toggle-btn {
-    display: block; /* Show on small screens */
-  }
-}
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-  }
-  .contact-info,
-  .contact-form {
-    width: 100%;
+    margin-right: 0;
   }
 }

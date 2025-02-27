@@ -104,7 +104,7 @@ body {
   padding: 5px;
 }
 
-.contact-form {
+form {
   width: 60%;
 }
 
@@ -177,7 +177,7 @@ textarea {
     padding: 1.5rem;
   }
   .contact-info,
-  .contact-form {
+  form {
     width: 100%;
   }
 }
